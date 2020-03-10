@@ -1,5 +1,5 @@
 import React from "react"
-import { slide as Menu } from "react-burger-menu"
+import { stack as Menu } from "react-burger-menu"
 
 class Navbar extends React.Component {
   state = {
@@ -17,10 +17,10 @@ class Navbar extends React.Component {
   render() {
     return (
       <section className="nav-section">
-        <Menu
+        <Menu 
           isOpen={this.state.menuOpen}
           onStateChange={(state) => this.handleStateChange(state)}
-          width={`100vw`}
+          // width={`100vw`}
         >
           <a id="home" className="menu-item" href="#home" onClick={() => this.closeMenu()}>Home</a>
           <a id="about" className="menu-item" href="#about" onClick={() => this.closeMenu()}>About</a>
