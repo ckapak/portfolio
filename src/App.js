@@ -1,29 +1,24 @@
 import React from 'react'
-import './App.css'
-import Typical from 'react-typical'
+import './stylesheets/main.scss'
 
-class App extends React.Component {
-  render () {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1>Hello! My name is Christine Kapak</h1>
-          <p>I am a{' '}
-            <Typical
-            loop={Infinity}
-            wrapper="p"
-            steps={[
-              'front end developer', 1000, 
-              'marketing person', 1000,
-              'ski enthuasist', 1000
-              ]}
-            />
-          </p>
-        </header>
-      </div>
+import Home from './components/Home'
+import About from './components/About'
+import Projects from './components/Projects'
+import Navbar from './components/Navbar'
+import Contact from './components/Contact'
+import Skills from './components/Skills'
 
-    )
-  }
+const App = () => {
+  return (
+    <main>
+      <Navbar />
+      <Home />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+    </main >
+  )
 }
 
 export default App
