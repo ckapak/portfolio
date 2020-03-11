@@ -7,17 +7,17 @@ class Home extends React.Component {
       <div className="App">
         <header className="App-header">
           <h1>Hello! My name is Christine Kapak</h1>
-          <p>I am a{' '}
+          <div>I am a{' '}
             <Typical
             loop={Infinity}
-            wrapper="p"
+            wrapper="div"
             steps={[
               'front end developer', 1000, 
               'marketing person', 1000,
               'ski enthuasist', 1000
               ]}
             />
-          </p>
+          </div>
         </header>
       </div>
 
